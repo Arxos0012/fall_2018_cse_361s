@@ -1,0 +1,104 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Thu Sep 20 16:46:52 2018
+| Host         : DESKTOP-89ULBBA running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file rsrc_control_sets_placed.rpt
+| Design       : rsrc
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    40 |
+| Unused register locations in slices containing registers |     0 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|    16+ |           40 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              16 |            7 |
+| Yes          | No                    | No                     |            2432 |          463 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              64 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |         Enable Signal        | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                              | rsrcpc/SR[0]     |                7 |             16 |
+|  clk_IBUF_BUFG | rsrcirreg/a_reg[31][0]       |                  |               13 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/E[0]               |                  |                9 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/address_reg[31][0] |                  |                8 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/c_reg[31][0]       |                  |               25 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/mdi_reg[31][0]     |                  |               12 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/mdo_reg[31][0]     |                  |               11 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/pc_reg[31][0]      | rsrcpc/SR[0]     |               16 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg10_reg[31][0]   |                  |                6 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg12_reg[31][0]   |                  |               11 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg13_reg[31][0]   |                  |                9 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg11_reg[31][0]   |                  |                7 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg14_reg[31][0]   |                  |                9 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg15_reg[31][0]   |                  |               14 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg8_reg[31][0]    |                  |               21 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg17_reg[31][0]   |                  |                8 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg31_reg[31][0]   |                  |               22 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg26_reg[31][0]   |                  |               10 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg7_reg[31][0]    |                  |               17 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg5_reg[31][0]    |                  |               17 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg9_reg[31][0]    |                  |               19 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg18_reg[31][0]   |                  |                9 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg25_reg[31][0]   |                  |               11 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg27_reg[31][0]   |                  |               14 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg24_reg[31][0]   |                  |                6 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg2_reg[31][0]    |                  |                8 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg29_reg[31][0]   |                  |               13 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg3_reg[31][0]    |                  |                6 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg30_reg[31][0]   |                  |               15 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg1_reg[31][0]    |                  |                8 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg6_reg[31][0]    |                  |               10 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg4_reg[31][0]    |                  |               11 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg21_reg[31][0]   |                  |               10 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg19_reg[31][0]   |                  |               20 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg22_reg[31][0]   |                  |               13 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg20_reg[31][0]   |                  |               13 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg28_reg[31][0]   |                  |               12 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg16_reg[31][0]   |                  |                8 |             64 |
+|  clk_IBUF_BUFG | rsrcirreg/reg23_reg[31][0]   |                  |               18 |             64 |
+|  clk_IBUF_BUFG | rsrccontrol/out[2]           |                  |               10 |             64 |
++----------------+------------------------------+------------------+------------------+----------------+
+
+

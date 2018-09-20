@@ -1,0 +1,480 @@
+
+*** Running vivado
+    with args -log rsrc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source rsrc.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source rsrc.tcl -notrace
+Command: synth_design -top rsrc -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 7416 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 357.445 ; gain = 99.621
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'rsrc' [D:/Vivado Projects/Hw2/rsrc.vhd:21]
+INFO: [Synth 8-3491] module 'pc' declared at 'D:/Vivado Projects/Hw2/pc.vhd:11' bound to instance 'rsrcpc' of component 'pc' [D:/Vivado Projects/Hw2/rsrc.vhd:203]
+INFO: [Synth 8-638] synthesizing module 'pc' [D:/Vivado Projects/Hw2/pc.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'pc' (1#1) [D:/Vivado Projects/Hw2/pc.vhd:20]
+INFO: [Synth 8-3491] module 'a' declared at 'D:/Vivado Projects/Hw2/a.vhd:10' bound to instance 'rsrcareg' of component 'a' [D:/Vivado Projects/Hw2/rsrc.vhd:211]
+INFO: [Synth 8-638] synthesizing module 'a' [D:/Vivado Projects/Hw2/a.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'a' (2#1) [D:/Vivado Projects/Hw2/a.vhd:17]
+INFO: [Synth 8-3491] module 'c' declared at 'D:/Vivado Projects/Hw2/c.vhd:10' bound to instance 'rsrccreg' of component 'c' [D:/Vivado Projects/Hw2/rsrc.vhd:217]
+INFO: [Synth 8-638] synthesizing module 'c' [D:/Vivado Projects/Hw2/c.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'c' (3#1) [D:/Vivado Projects/Hw2/c.vhd:18]
+INFO: [Synth 8-3491] module 'alu' declared at 'D:/Vivado Projects/Hw2/alu.vhd:12' bound to instance 'rsrcalu' of component 'alu' [D:/Vivado Projects/Hw2/rsrc.vhd:224]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/Vivado Projects/Hw2/alu.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'alu' (4#1) [D:/Vivado Projects/Hw2/alu.vhd:31]
+INFO: [Synth 8-3491] module 'shiftcounter' declared at 'D:/Vivado Projects/Hw2/shiftcounter.vhd:11' bound to instance 'rsrcshiftcounter' of component 'shiftcounter' [D:/Vivado Projects/Hw2/rsrc.vhd:242]
+INFO: [Synth 8-638] synthesizing module 'shiftcounter' [D:/Vivado Projects/Hw2/shiftcounter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'shiftcounter' (5#1) [D:/Vivado Projects/Hw2/shiftcounter.vhd:17]
+INFO: [Synth 8-3491] module 'regfile' declared at 'D:/Vivado Projects/Hw2/regfile.vhd:10' bound to instance 'rsrcregfile' of component 'regfile' [D:/Vivado Projects/Hw2/rsrc.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/Vivado Projects/Hw2/regfile.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (6#1) [D:/Vivado Projects/Hw2/regfile.vhd:24]
+INFO: [Synth 8-3491] module 'ma' declared at 'D:/Vivado Projects/Hw2/ma.vhd:10' bound to instance 'rsrcmareg' of component 'ma' [D:/Vivado Projects/Hw2/rsrc.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'ma' [D:/Vivado Projects/Hw2/ma.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ma' (7#1) [D:/Vivado Projects/Hw2/ma.vhd:17]
+INFO: [Synth 8-3491] module 'md' declared at 'D:/Vivado Projects/Hw2/md.vhd:10' bound to instance 'rsrcmdreg' of component 'md' [D:/Vivado Projects/Hw2/rsrc.vhd:266]
+INFO: [Synth 8-638] synthesizing module 'md' [D:/Vivado Projects/Hw2/md.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'md' (8#1) [D:/Vivado Projects/Hw2/md.vhd:21]
+INFO: [Synth 8-3491] module 'ir' declared at 'D:/Vivado Projects/Hw2/ir.vhd:10' bound to instance 'rsrcirreg' of component 'ir' [D:/Vivado Projects/Hw2/rsrc.vhd:276]
+INFO: [Synth 8-638] synthesizing module 'ir' [D:/Vivado Projects/Hw2/ir.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ir' (9#1) [D:/Vivado Projects/Hw2/ir.vhd:20]
+INFO: [Synth 8-3491] module 'conbit' declared at 'D:/Vivado Projects/Hw2/conbit.vhd:10' bound to instance 'rsrcconbit' of component 'conbit' [D:/Vivado Projects/Hw2/rsrc.vhd:285]
+INFO: [Synth 8-638] synthesizing module 'conbit' [D:/Vivado Projects/Hw2/conbit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'conbit' (10#1) [D:/Vivado Projects/Hw2/conbit.vhd:16]
+INFO: [Synth 8-3491] module 'control' declared at 'D:/Vivado Projects/Hw2/control.vhd:11' bound to instance 'rsrccontrol' of component 'control' [D:/Vivado Projects/Hw2/rsrc.vhd:290]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/Vivado Projects/Hw2/control.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'control' (11#1) [D:/Vivado Projects/Hw2/control.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'rsrc' (12#1) [D:/Vivado Projects/Hw2/rsrc.vhd:21]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[31]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[30]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[29]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[28]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[27]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[26]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[25]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[24]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[23]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[22]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[21]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[20]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[19]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[18]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[17]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[16]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[15]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[14]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[13]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[12]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[11]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[10]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[9]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[8]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[7]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[6]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[5]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[4]
+WARNING: [Synth 8-3331] design conbit has unconnected port ir[3]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[31]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[30]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[29]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[28]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[27]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[11]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[10]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[9]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[8]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[7]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[6]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[5]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[4]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[3]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[2]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[1]
+WARNING: [Synth 8-3331] design regfile has unconnected port ir[0]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[31]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[30]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[29]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[28]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[27]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[26]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[25]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[24]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[23]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[22]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[21]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[20]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[19]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[18]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[17]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[16]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[15]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[14]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[13]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[12]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[11]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[10]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[9]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[8]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[7]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[6]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port rrc[5]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[31]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[30]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[29]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[28]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[27]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[26]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[25]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[24]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[23]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[22]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[21]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[20]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[19]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[18]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[17]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[16]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[15]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[14]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[13]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[12]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[11]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[10]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[9]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[8]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[7]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[6]
+WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[5]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 413.676 ; gain = 155.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 413.676 ; gain = 155.852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 413.676 ; gain = 155.852
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Projects/Hw2/alu.vhd:44]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
+INFO: [Synth 8-5546] ROM "gra" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "add" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "andx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "notx" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "shc" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_24_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_10_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "p_13_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "inc4" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ir_in" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "nxt_state" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                         00000001 |                              000
+                      s1 |                         00000010 |                              001
+                      s2 |                         00000100 |                              010
+                      s3 |                         00001000 |                              011
+                      s4 |                         00010000 |                              100
+                      s5 |                         00100000 |                              101
+                      s6 |                         01000000 |                              110
+                      s7 |                         10000000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'control'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 426.449 ; gain = 168.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 39    
++---Muxes : 
+	  13 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   2 Input      5 Bit        Muxes := 4     
+	  32 Input      1 Bit        Muxes := 32    
+	   2 Input      1 Bit        Muxes := 61    
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 28    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pc 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module a 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module c 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	  13 Input     32 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 1     
+Module shiftcounter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	  32 Input      1 Bit        Muxes := 32    
+Module ma 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module md 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+Module ir 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module conbit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 57    
+	   4 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 28    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "rsrccontrol/nxt_state" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    16|
+|3     |LUT1   |     3|
+|4     |LUT2   |   151|
+|5     |LUT3   |   109|
+|6     |LUT4   |    58|
+|7     |LUT5   |   174|
+|8     |LUT6   |   913|
+|9     |MUXF7  |   256|
+|10    |MUXF8  |    62|
+|11    |FDRE   |  1255|
+|12    |FDSE   |     1|
+|13    |IBUF   |     3|
+|14    |IOBUF  |    32|
+|15    |OBUF   |    34|
++------+-------+------+
+
+Report Instance Areas: 
++------+--------------+--------+------+
+|      |Instance      |Module  |Cells |
++------+--------------+--------+------+
+|1     |top           |        |  3068|
+|2     |  rsrcareg    |a       |    32|
+|3     |  rsrccontrol |control |    12|
+|4     |  rsrccreg    |c       |    32|
+|5     |  rsrcirreg   |ir      |   885|
+|6     |  rsrcmareg   |ma      |    32|
+|7     |  rsrcmdreg   |md      |    64|
+|8     |  rsrcpc      |pc      |    33|
+|9     |  rsrcregfile |regfile |  1908|
++------+--------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 641.426 ; gain = 383.602
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 105 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 641.426 ; gain = 383.602
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 641.426 ; gain = 383.602
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 369 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+64 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 677.879 ; gain = 432.930
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado Projects/Hw2/Hw2.runs/synth_1/rsrc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file rsrc_utilization_synth.rpt -pb rsrc_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.130 . Memory (MB): peak = 677.879 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 20 16:46:04 2018...
