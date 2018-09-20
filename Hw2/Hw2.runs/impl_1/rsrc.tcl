@@ -60,6 +60,7 @@ proc step_failed { step } {
   close $ch
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -73,6 +74,7 @@ set rc [catch {
   set_property ip_output_repo {{D:/Vivado Projects/Hw2/Hw2.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   add_files -quiet {{D:/Vivado Projects/Hw2/Hw2.runs/synth_1/rsrc.dcp}}
+  read_xdc {{D:/Vivado Projects/Hw2/rsrc.xdc}}
   link_design -top rsrc -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date         : Thu Sep 20 16:46:04 2018
+| Date         : Thu Sep 20 18:06:57 2018
 | Host         : DESKTOP-89ULBBA running 64-bit major release  (build 9200)
 | Command      : report_utilization -file rsrc_utilization_synth.rpt -pb rsrc_utilization_synth.pb
 | Design       : rsrc
@@ -30,14 +30,14 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 1259 |     0 |     63400 |  1.99 |
-|   LUT as Logic          | 1259 |     0 |     63400 |  1.99 |
+| Slice LUTs*             | 1240 |     0 |     63400 |  1.96 |
+|   LUT as Logic          | 1240 |     0 |     63400 |  1.96 |
 |   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
 | Slice Registers         | 1256 |     0 |    126800 |  0.99 |
 |   Register as Flip Flop | 1256 |     0 |    126800 |  0.99 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
 | F7 Muxes                |  256 |     0 |     31700 |  0.81 |
-| F8 Muxes                |   62 |     0 |     15850 |  0.39 |
+| F8 Muxes                |   54 |     0 |     15850 |  0.34 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -147,13 +147,13 @@ Table of Contents
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
 | FDRE     | 1255 |        Flop & Latch |
-| LUT6     |  913 |                 LUT |
+| LUT6     |  935 |                 LUT |
 | MUXF7    |  256 |               MuxFx |
-| LUT5     |  174 |                 LUT |
-| LUT2     |  151 |                 LUT |
-| LUT3     |  109 |                 LUT |
-| MUXF8    |   62 |               MuxFx |
-| LUT4     |   58 |                 LUT |
+| LUT5     |  167 |                 LUT |
+| LUT2     |  117 |                 LUT |
+| LUT3     |   69 |                 LUT |
+| LUT4     |   55 |                 LUT |
+| MUXF8    |   54 |               MuxFx |
 | IBUF     |   35 |                  IO |
 | OBUF     |   34 |                  IO |
 | OBUFT    |   32 |                  IO |

@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:{D:/Vivado Projects/Hw2/rsrc.xdc} rfile:../../../rsrc.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:2 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN E3 [get_ports {clk}]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN C12 [get_ports {reset_l}]
