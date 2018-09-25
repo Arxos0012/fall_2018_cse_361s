@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Sun Sep 23 16:03:19 2018
-| Host             : DESKTOP-89ULBBA running 64-bit major release  (build 9200)
+| Date             : Mon Sep 24 17:35:17 2018
+| Host             : DESKTOP-28DBK6Q running 64-bit major release  (build 9200)
 | Command          : report_power -file testbench_power_routed.rpt -pb testbench_power_summary_routed.pb -rpx testbench_power_routed.rpx
 | Design           : testbench
 | Device           : xc7a100tcsg324-1
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.219        |
+| Total On-Chip Power (W)  | 0.217        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.116        |
+| Dynamic (W)              | 0.114        |
 | Device Static (W)        | 0.103        |
 | Effective TJA (C/W)      | 4.6          |
 | Max Ambient (C)          | 84.0         |
@@ -52,20 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.008 |        7 |       --- |             --- |
-| Slice Logic              |    <0.001 |     5812 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     2281 |     63400 |            3.60 |
-|   Register               |    <0.001 |     1330 |    126800 |            1.05 |
-|   F7/F8 Muxes            |    <0.001 |      927 |     63400 |            1.46 |
+| Clocks                   |     0.006 |        7 |       --- |             --- |
+| Slice Logic              |    <0.001 |     5816 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     2279 |     63400 |            3.59 |
+|   Register               |    <0.001 |     1327 |    126800 |            1.05 |
 |   LUT as Distributed RAM |    <0.001 |      512 |     19000 |            2.69 |
+|   F7/F8 Muxes            |    <0.001 |      927 |     63400 |            1.46 |
 |   CARRY4                 |    <0.001 |       16 |     15850 |            0.10 |
 |   Others                 |     0.000 |      528 |       --- |             --- |
-| Signals                  |     0.001 |     4540 |       --- |             --- |
+| Signals                  |    <0.001 |     4542 |       --- |             --- |
 | Block RAM                |    <0.001 |      128 |       135 |           94.81 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
 | I/O                      |    <0.001 |       16 |       210 |            7.62 |
 | Static Power             |     0.103 |          |           |                 |
-| Total                    |     0.219 |          |           |                 |
+| Total                    |     0.217 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +75,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.029 |       0.010 |      0.018 |
+| Vccint    |       1.000 |     0.026 |       0.008 |      0.018 |
 | Vccaux    |       1.800 |     0.077 |       0.059 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -132,7 +132,7 @@ Table of Contents
 | Clock              | Domain                       | Constraint (ns) |
 +--------------------+------------------------------+-----------------+
 | clk                | clk                          |            10.0 |
-| clk                | clk_IBUF_BUFG                |            10.0 |
+| clk                | clk_IBUF                     |            10.0 |
 | clk_out1_clk_wiz_0 | dcm1/inst/clk_out1_clk_wiz_0 |            20.0 |
 | clk_out2_clk_wiz_0 | dcm1/inst/clk_out2_clk_wiz_0 |            40.0 |
 | clkfbout_clk_wiz_0 | dcm1/inst/clkfbout_clk_wiz_0 |            10.0 |
@@ -148,9 +148,9 @@ Table of Contents
 +------------------------------------------------+-----------+
 | Name                                           | Power (W) |
 +------------------------------------------------+-----------+
-| testbench                                      |     0.116 |
-|   dcm1                                         |     0.107 |
-|     inst                                       |     0.107 |
+| testbench                                      |     0.114 |
+|   dcm1                                         |     0.106 |
+|     inst                                       |     0.106 |
 |   rsrc1                                        |     0.004 |
 |     rsrcalu                                    |    <0.001 |
 |     rsrcareg                                   |    <0.001 |
@@ -161,7 +161,7 @@ Table of Contents
 |     rsrcmdreg                                  |    <0.001 |
 |     rsrcpc                                     |    <0.001 |
 |     rsrcregfile                                |     0.002 |
-|   sram1                                        |     0.002 |
+|   sram1                                        |     0.001 |
 |     myarray_reg_0_255_0_0                      |    <0.001 |
 |     myarray_reg_0_255_10_10                    |    <0.001 |
 |     myarray_reg_0_255_11_11                    |    <0.001 |

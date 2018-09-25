@@ -101,7 +101,7 @@ BEGIN
 
    sram_we_l  <= '0' WHEN write = '1' ELSE '1' ;
    
-   vga_wea <= "1" WHEN (address(31 DOWNTO 21) = "11111111111") ELSE "0";
+   vga_wea <= "1" WHEN (write = '1') ELSE "0";
    vga_ena <= '1' WHEN (address(31 DOWNTO 21) = "11111111111") ELSE '0';
    
    done <= '1' WHEN (eprom_ce_l = '0' OR sram_ce_l = '0' OR vga_ena = '1') ELSE '0' ;
@@ -127,7 +127,7 @@ BEGIN
                ce_l      => sram_ce_l,
                oe_l      => sram_oe_l,
                we_l      => sram_we_l,
-               clk       => clk);
+               clk       => src_clk);
     
     dcm1:clk_wiz_0
       PORT MAP(clk_out1  => src_clk,

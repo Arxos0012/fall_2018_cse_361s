@@ -22,17 +22,14 @@ ARCHITECTURE behavioral OF eprom IS
 BEGIN
    WITH address  SELECT
    data <=
-          X"2fc00014" WHEN "0000000000" , --- la r31, LOOP
-          X"2f40000c" WHEN "0000000001" , --- la r29, TOP
-          X"28400000" WHEN "0000000010" , --- la r1, 0
-          X"2f81ffff" WHEN "0000000011" , --- la r30, -1
-          X"e7bc0015" WHEN "0000000100" , --- shl r30, r30, 21
-          X"187c0000" WHEN "0000000101" , --- st r1, 0(r30)
-          X"6fbc0004" WHEN "0000000110" , --- addi r30, r30, 4
-          X"403fe003" WHEN "0000000111" , --- brnz r31, r30
-          X"68420001" WHEN "0000001000" , --- addi r1, r1, 1
-          X"403a0001" WHEN "0000001001" , --- br r29
-          X"f8000000" WHEN "0000001010" , --- stop
+          X"2f400008" WHEN "0000000000" , --- la r29, TOP
+          X"28400000" WHEN "0000000001" , --- la r1, 0
+          X"2f81ffff" WHEN "0000000010" , --- la r30, -1
+          X"e7bc0015" WHEN "0000000011" , --- shl r30, r30, 21
+          X"3841e003" WHEN "0000000100" , --- blt r1, r30
+          X"68420001" WHEN "0000000101" , --- la r31, LOOP
+          X"403a0001" WHEN "0000000110" , --- br r29
+          X"f8000000" WHEN "0000000111" , --- stop
           X"00000000" WHEN OTHERS ;
         
    readprocess:PROCESS(ce_l,oe_l,data)
