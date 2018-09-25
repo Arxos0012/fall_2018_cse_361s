@@ -25,39 +25,39 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/fall_2018_cse_361s/Hw2/Hw2.cache/wt [current_project]
-set_property parent.project_path C:/fall_2018_cse_361s/Hw2/Hw2.xpr [current_project]
+set_property webtalk.parent_dir {D:/Vivado Projects/Hw2/Hw2.cache/wt} [current_project]
+set_property parent.project_path {D:/Vivado Projects/Hw2/Hw2.xpr} [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/fall_2018_cse_361s/Hw2/Hw2.cache/ip [current_project]
+set_property ip_output_repo {d:/Vivado Projects/Hw2/Hw2.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/fall_2018_cse_361s/Hw2/a.vhd
-  C:/fall_2018_cse_361s/Hw2/alu.vhd
-  C:/fall_2018_cse_361s/Hw2/c.vhd
-  C:/fall_2018_cse_361s/Hw2/conbit.vhd
-  C:/fall_2018_cse_361s/Hw2/control.vhd
-  C:/fall_2018_cse_361s/Hw2/controlstore.vhd
-  C:/fall_2018_cse_361s/Hw2/eprom.vhd
-  C:/fall_2018_cse_361s/Hw2/ir.vhd
-  C:/fall_2018_cse_361s/Hw2/ma.vhd
-  C:/fall_2018_cse_361s/Hw2/md.vhd
-  C:/fall_2018_cse_361s/Hw2/pc.vhd
-  C:/fall_2018_cse_361s/Hw2/regfile.vhd
-  C:/fall_2018_cse_361s/Hw2/rsrc.vhd
-  C:/fall_2018_cse_361s/Hw2/shiftcounter.vhd
-  C:/fall_2018_cse_361s/Hw2/sram.vhd
-  C:/fall_2018_cse_361s/Hw2/vga.vhd
-  C:/fall_2018_cse_361s/Hw2/testbench.vhd
+  {D:/Vivado Projects/Hw2/a.vhd}
+  {D:/Vivado Projects/Hw2/alu.vhd}
+  {D:/Vivado Projects/Hw2/c.vhd}
+  {D:/Vivado Projects/Hw2/conbit.vhd}
+  {D:/Vivado Projects/Hw2/control.vhd}
+  {D:/Vivado Projects/Hw2/controlstore.vhd}
+  {D:/Vivado Projects/Hw2/eprom.vhd}
+  {D:/Vivado Projects/Hw2/ir.vhd}
+  {D:/Vivado Projects/Hw2/ma.vhd}
+  {D:/Vivado Projects/Hw2/md.vhd}
+  {D:/Vivado Projects/Hw2/pc.vhd}
+  {D:/Vivado Projects/Hw2/regfile.vhd}
+  {D:/Vivado Projects/Hw2/rsrc.vhd}
+  {D:/Vivado Projects/Hw2/shiftcounter.vhd}
+  {D:/Vivado Projects/Hw2/sram.vhd}
+  {D:/Vivado Projects/Hw2/vga.vhd}
+  {D:/Vivado Projects/Hw2/testbench.vhd}
 }
-read_ip -quiet C:/fall_2018_cse_361s/Hw2/Hw2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/Hw2/Hw2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/Hw2/Hw2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/Hw2/Hw2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet {{D:/Vivado Projects/Hw2/Hw2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+set_property used_in_implementation false [get_files -all {{d:/Vivado Projects/Hw2/Hw2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/Vivado Projects/Hw2/Hw2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/Vivado Projects/Hw2/Hw2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
 
-read_ip -quiet C:/fall_2018_cse_361s/Hw2/Hw2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/Hw2/Hw2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+read_ip -quiet {{D:/Vivado Projects/Hw2/Hw2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+set_property used_in_implementation false [get_files -all {{d:/Vivado Projects/Hw2/Hw2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -67,8 +67,8 @@ set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/fall_2018_cse_361s/Hw2/rsrc.xdc
-set_property used_in_implementation false [get_files C:/fall_2018_cse_361s/Hw2/rsrc.xdc]
+read_xdc {{D:/Vivado Projects/Hw2/rsrc.xdc}}
+set_property used_in_implementation false [get_files {{D:/Vivado Projects/Hw2/rsrc.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]

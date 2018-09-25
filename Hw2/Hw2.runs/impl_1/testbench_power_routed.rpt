@@ -1,8 +1,8 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
-| Date             : Mon Sep 24 17:35:17 2018
-| Host             : DESKTOP-28DBK6Q running 64-bit major release  (build 9200)
+| Date             : Mon Sep 24 20:12:21 2018
+| Host             : DESKTOP-89ULBBA running 64-bit major release  (build 9200)
 | Command          : report_power -file testbench_power_routed.rpt -pb testbench_power_summary_routed.pb -rpx testbench_power_routed.rpx
 | Design           : testbench
 | Device           : xc7a100tcsg324-1
@@ -53,14 +53,14 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.006 |        7 |       --- |             --- |
-| Slice Logic              |    <0.001 |     5816 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     2279 |     63400 |            3.59 |
+| Slice Logic              |    <0.001 |     5822 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     2289 |     63400 |            3.61 |
 |   Register               |    <0.001 |     1327 |    126800 |            1.05 |
 |   LUT as Distributed RAM |    <0.001 |      512 |     19000 |            2.69 |
-|   F7/F8 Muxes            |    <0.001 |      927 |     63400 |            1.46 |
+|   F7/F8 Muxes            |    <0.001 |      926 |     63400 |            1.46 |
 |   CARRY4                 |    <0.001 |       16 |     15850 |            0.10 |
 |   Others                 |     0.000 |      528 |       --- |             --- |
-| Signals                  |    <0.001 |     4542 |       --- |             --- |
+| Signals                  |    <0.001 |     4549 |       --- |             --- |
 | Block RAM                |    <0.001 |      128 |       135 |           94.81 |
 | MMCM                     |     0.106 |        1 |         6 |           16.67 |
 | I/O                      |    <0.001 |       16 |       210 |            7.62 |
