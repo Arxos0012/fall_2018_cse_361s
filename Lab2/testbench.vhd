@@ -84,6 +84,12 @@ ARCHITECTURE structure OF testbench IS
    SIGNAL vga_clk      :  STD_LOGIC ;
    SIGNAL vga_ena      :  STD_LOGIC ;
    SIGNAL vga_wea      :  STD_LOGIC_VECTOR(0 DOWNTO 0) ;
+   
+   signal clk_counter  : std_logic_vector(1 downto 0) := "00";
+
+   type states is (s0, s1, s2);
+   signal state: states := s0;
+   signal nxt_state: states := s1;
 
 BEGIN
 
@@ -94,7 +100,28 @@ BEGIN
          reset_l_sync <= reset_l_temp ;
       END IF;
    END PROCESS syncprocess ;
-
+   
+   fetch_mem:process(clk)
+   begin
+        if (clk = '1' AND clk'event) then
+            if(reset_l_sync = '0') then
+                state <= s0;
+            else
+                state <= nxt_state;
+            end if;
+        end if;
+    end process fetch_mem;
+    
+    state_trans: process(state)
+    begin
+        nxt_state <= state;
+        case state is
+            when s0 => nxt_state <= s1;
+            when s1 => nxt_state <= s2;
+            when s2 => nxt_state <= s0;
+        end case;
+    end process state_trans;
+        
    eprom_ce_l <= '0' WHEN (address(31 DOWNTO 12) = "00000000000000000000" AND read = '1') ELSE '1' ;
    sram_ce_l  <= '0' WHEN (address(31 DOWNTO 12) = "00000000000000000001" AND (read = '1' OR write = '1')) ELSE '1' ;
 
@@ -106,7 +133,7 @@ BEGIN
    vga_wea <= "1" WHEN (write = '1') ELSE "0";
    vga_ena <= '1' WHEN (address(31 DOWNTO 21) = "11111111111") ELSE '0';
    
-   done <= '1' WHEN (eprom_ce_l = '0' OR sram_ce_l = '0' OR vga_ena = '1') ELSE '0' ;
+   done <= '1' WHEN (state = s2 OR sram_ce_l = '0' OR vga_ena = '1') ELSE '0' ;
    
    d <= mem_out WHEN eprom_oe_l = '0' ELSE "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ";
    
