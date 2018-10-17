@@ -1,6 +1,6 @@
-webtalk_init -webtalk_dir C:/fall_2018_cse_361s/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/
+webtalk_init -webtalk_dir D:/Vivado Projects/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Tue Oct 16 15:07:19 2018" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Wed Oct 17 01:43:03 2018" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2018.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2258646" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -12,21 +12,21 @@ webtalk_add_data -client project -key target_family -value "not_applicable" -con
 webtalk_add_data -client project -key target_device -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_package -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
-webtalk_add_data -client project -key random_id -value "1faa2473391f5fbe81b32c90892d8651" -context "software_version_and_target_device"
+webtalk_add_data -client project -key random_id -value "a71d2a4c-5a9b-4d3b-b3a3-7617cd4aa537" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "dd7b5e3be32b4ddcb6182c3d08cf8212" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "35" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "46" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Microsoft Windows 8 or later , 64-bit" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
-webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-6500U CPU @ 2.50GHz" -context "user_environment"
-webtalk_add_data -client project -key cpu_speed -value "2592 MHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-4590 CPU @ 3.30GHz" -context "user_environment"
+webtalk_add_data -client project -key cpu_speed -value "3299 MHz" -context "user_environment"
 webtalk_add_data -client project -key total_processors -value "1" -context "user_environment"
 webtalk_add_data -client project -key system_ram -value "8.000 GB" -context "user_environment"
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "2700 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key runtime -value "16250 ns" -context "xsim\\usage"
 webtalk_add_data -client xsim -key iteration -value "13" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.51_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "44316_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2797505359 -regid "" -xml C:/fall_2018_cse_361s/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/fall_2018_cse_361s/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/fall_2018_cse_361s/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.78_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "44624_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2807514832 -regid "" -xml D:/Vivado Projects/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/Vivado Projects/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/Vivado Projects/Lab2/Lab2.sim/sim_1/behav/xsim/xsim.dir/testbench_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate

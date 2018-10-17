@@ -1,2 +1,8 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab2/testbench.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity testbench
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Lab2/Lab2.srcs/sources_1/ip/blk_mem_gen_1/blk_mem_gen_1_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_1_blk_mem_gen_prim_wrapper_init
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_1_blk_mem_gen_prim_width
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_1_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_1_blk_mem_gen_top
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_1_blk_mem_gen_v8_4_1_synth
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_1_blk_mem_gen_v8_4_1
+INFO: [VRFC 10-307] analyzing entity blk_mem_gen_1

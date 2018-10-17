@@ -89,7 +89,7 @@ ARCHITECTURE structure OF testbench IS
 
    type states is (s0, s1, s2);
    signal state: states := s0;
-   signal nxt_state: states := s1;
+   signal nxt_state: states := s0;
 
 BEGIN
 
@@ -118,7 +118,7 @@ BEGIN
         case state is
             when s0 => nxt_state <= s1;
             when s1 => nxt_state <= s2;
-            when s2 => nxt_state <= s0;
+            when s2 => nxt_state <= s1;
         end case;
     end process state_trans;
         
