@@ -60,8 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,15 +68,15 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/fall_2018_cse_361s/Lab3/Lab3.cache/wt [current_project]
-  set_property parent.project_path C:/fall_2018_cse_361s/Lab3/Lab3.xpr [current_project]
-  set_property ip_output_repo C:/fall_2018_cse_361s/Lab3/Lab3.cache/ip [current_project]
+  set_property webtalk.parent_dir {D:/Vivado Projects/Lab3/Lab3.cache/wt} [current_project]
+  set_property parent.project_path {D:/Vivado Projects/Lab3/Lab3.xpr} [current_project]
+  set_property ip_output_repo {{D:/Vivado Projects/Lab3/Lab3.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
-  add_files -quiet C:/fall_2018_cse_361s/Lab3/Lab3.runs/synth_1/testbench.dcp
-  read_ip -quiet c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_ip -quiet c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-  read_xdc C:/fall_2018_cse_361s/Lab3/testbench.xdc
+  add_files -quiet {{D:/Vivado Projects/Lab3/Lab3.runs/synth_1/testbench.dcp}}
+  read_ip -quiet {{D:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+  read_ip -quiet {{D:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+  read_xdc {{D:/Vivado Projects/Lab3/testbench.xdc}}
   link_design -top testbench -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]

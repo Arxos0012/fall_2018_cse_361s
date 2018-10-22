@@ -14,64 +14,64 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 1620 
+INFO: Helper process launched with PID 13572 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 388.008 ; gain = 99.148
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 389.371 ; gain = 100.398
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'testbench' [C:/fall_2018_cse_361s/Lab3/testbench.vhd:24]
-INFO: [Synth 8-3491] module 'arbiter' declared at 'C:/fall_2018_cse_361s/Lab3/arbiter.vhd:11' bound to instance 'arb1' of component 'arbiter' [C:/fall_2018_cse_361s/Lab3/testbench.vhd:107]
-INFO: [Synth 8-638] synthesizing module 'arbiter' [C:/fall_2018_cse_361s/Lab3/arbiter.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'arbiter' (1#1) [C:/fall_2018_cse_361s/Lab3/arbiter.vhd:20]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/fall_2018_cse_361s/Lab3/Lab3.runs/synth_1/.Xil/Vivado-14196-DESKTOP-28DBK6Q/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'mydcm1' of component 'clk_wiz_0' [C:/fall_2018_cse_361s/Lab3/testbench.vhd:115]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/fall_2018_cse_361s/Lab3/Lab3.runs/synth_1/.Xil/Vivado-14196-DESKTOP-28DBK6Q/realtime/clk_wiz_0_stub.vhdl:14]
-INFO: [Synth 8-3491] module 'rsrc' declared at 'C:/fall_2018_cse_361s/Lab3/rsrc.vhd:11' bound to instance 'rsrc0' of component 'rsrc' [C:/fall_2018_cse_361s/Lab3/testbench.vhd:130]
-INFO: [Synth 8-638] synthesizing module 'rsrc' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:23]
-INFO: [Synth 8-3491] module 'pc' declared at 'C:/fall_2018_cse_361s/Lab3/pc.vhd:11' bound to instance 'rsrcpc' of component 'pc' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:208]
-INFO: [Synth 8-638] synthesizing module 'pc' [C:/fall_2018_cse_361s/Lab3/pc.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'pc' (2#1) [C:/fall_2018_cse_361s/Lab3/pc.vhd:20]
-INFO: [Synth 8-3491] module 'a' declared at 'C:/fall_2018_cse_361s/Lab3/a.vhd:10' bound to instance 'rsrcareg' of component 'a' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:216]
-INFO: [Synth 8-638] synthesizing module 'a' [C:/fall_2018_cse_361s/Lab3/a.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'a' (3#1) [C:/fall_2018_cse_361s/Lab3/a.vhd:17]
-INFO: [Synth 8-3491] module 'c' declared at 'C:/fall_2018_cse_361s/Lab3/c.vhd:10' bound to instance 'rsrccreg' of component 'c' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:222]
-INFO: [Synth 8-638] synthesizing module 'c' [C:/fall_2018_cse_361s/Lab3/c.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'c' (4#1) [C:/fall_2018_cse_361s/Lab3/c.vhd:18]
-INFO: [Synth 8-3491] module 'alu' declared at 'C:/fall_2018_cse_361s/Lab3/alu.vhd:12' bound to instance 'rsrcalu' of component 'alu' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:229]
-INFO: [Synth 8-638] synthesizing module 'alu' [C:/fall_2018_cse_361s/Lab3/alu.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'alu' (5#1) [C:/fall_2018_cse_361s/Lab3/alu.vhd:31]
-INFO: [Synth 8-3491] module 'shiftcounter' declared at 'C:/fall_2018_cse_361s/Lab3/shiftcounter.vhd:11' bound to instance 'rsrcshiftcounter' of component 'shiftcounter' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:247]
-INFO: [Synth 8-638] synthesizing module 'shiftcounter' [C:/fall_2018_cse_361s/Lab3/shiftcounter.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'shiftcounter' (6#1) [C:/fall_2018_cse_361s/Lab3/shiftcounter.vhd:17]
-INFO: [Synth 8-3491] module 'regfile' declared at 'C:/fall_2018_cse_361s/Lab3/regfile.vhd:10' bound to instance 'rsrcregfile' of component 'regfile' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:252]
-INFO: [Synth 8-638] synthesizing module 'regfile' [C:/fall_2018_cse_361s/Lab3/regfile.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [C:/fall_2018_cse_361s/Lab3/regfile.vhd:24]
-INFO: [Synth 8-3491] module 'ma' declared at 'C:/fall_2018_cse_361s/Lab3/ma.vhd:10' bound to instance 'rsrcmareg' of component 'ma' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:265]
-INFO: [Synth 8-638] synthesizing module 'ma' [C:/fall_2018_cse_361s/Lab3/ma.vhd:18]
-INFO: [Synth 8-256] done synthesizing module 'ma' (8#1) [C:/fall_2018_cse_361s/Lab3/ma.vhd:18]
-INFO: [Synth 8-3491] module 'md' declared at 'C:/fall_2018_cse_361s/Lab3/md.vhd:10' bound to instance 'rsrcmdreg' of component 'md' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:272]
-INFO: [Synth 8-638] synthesizing module 'md' [C:/fall_2018_cse_361s/Lab3/md.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'md' (9#1) [C:/fall_2018_cse_361s/Lab3/md.vhd:21]
-INFO: [Synth 8-3491] module 'ir' declared at 'C:/fall_2018_cse_361s/Lab3/ir.vhd:10' bound to instance 'rsrcirreg' of component 'ir' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:282]
-INFO: [Synth 8-638] synthesizing module 'ir' [C:/fall_2018_cse_361s/Lab3/ir.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'ir' (10#1) [C:/fall_2018_cse_361s/Lab3/ir.vhd:20]
-INFO: [Synth 8-3491] module 'conbit' declared at 'C:/fall_2018_cse_361s/Lab3/conbit.vhd:10' bound to instance 'rsrcconbit' of component 'conbit' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:291]
-INFO: [Synth 8-638] synthesizing module 'conbit' [C:/fall_2018_cse_361s/Lab3/conbit.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'conbit' (11#1) [C:/fall_2018_cse_361s/Lab3/conbit.vhd:16]
-INFO: [Synth 8-3491] module 'control' declared at 'C:/fall_2018_cse_361s/Lab3/control.vhd:11' bound to instance 'rsrccontrol' of component 'control' [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:296]
-INFO: [Synth 8-638] synthesizing module 'control' [C:/fall_2018_cse_361s/Lab3/control.vhd:55]
-INFO: [Synth 8-256] done synthesizing module 'control' (12#1) [C:/fall_2018_cse_361s/Lab3/control.vhd:55]
-INFO: [Synth 8-256] done synthesizing module 'rsrc' (13#1) [C:/fall_2018_cse_361s/Lab3/rsrc.vhd:23]
-INFO: [Synth 8-3491] module 'eprom' declared at 'C:/fall_2018_cse_361s/Lab3/eprom.vhd:10' bound to instance 'erpom1' of component 'eprom' [C:/fall_2018_cse_361s/Lab3/testbench.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'eprom' [C:/fall_2018_cse_361s/Lab3/eprom.vhd:17]
-INFO: [Synth 8-256] done synthesizing module 'eprom' (14#1) [C:/fall_2018_cse_361s/Lab3/eprom.vhd:17]
-INFO: [Synth 8-3491] module 'sram' declared at 'C:/fall_2018_cse_361s/Lab3/sram.vhd:11' bound to instance 'sram1' of component 'sram' [C:/fall_2018_cse_361s/Lab3/testbench.vhd:166]
-INFO: [Synth 8-638] synthesizing module 'sram' [C:/fall_2018_cse_361s/Lab3/sram.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'sram' (15#1) [C:/fall_2018_cse_361s/Lab3/sram.vhd:20]
-INFO: [Synth 8-3491] module 'vga' declared at 'C:/fall_2018_cse_361s/Lab3/vga.vhd:6' bound to instance 'vga1' of component 'vga' [C:/fall_2018_cse_361s/Lab3/testbench.vhd:180]
-INFO: [Synth 8-638] synthesizing module 'vga' [C:/fall_2018_cse_361s/Lab3/vga.vhd:20]
-INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'C:/fall_2018_cse_361s/Lab3/Lab3.runs/synth_1/.Xil/Vivado-14196-DESKTOP-28DBK6Q/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'myrom' of component 'blk_mem_gen_0' [C:/fall_2018_cse_361s/Lab3/vga.vhd:42]
-INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [C:/fall_2018_cse_361s/Lab3/Lab3.runs/synth_1/.Xil/Vivado-14196-DESKTOP-28DBK6Q/realtime/blk_mem_gen_0_stub.vhdl:19]
-INFO: [Synth 8-256] done synthesizing module 'vga' (16#1) [C:/fall_2018_cse_361s/Lab3/vga.vhd:20]
-INFO: [Synth 8-256] done synthesizing module 'testbench' (17#1) [C:/fall_2018_cse_361s/Lab3/testbench.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'testbench' [D:/Vivado Projects/Lab3/testbench.vhd:24]
+INFO: [Synth 8-3491] module 'arbiter' declared at 'D:/Vivado Projects/Lab3/arbiter.vhd:11' bound to instance 'arb1' of component 'arbiter' [D:/Vivado Projects/Lab3/testbench.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'arbiter' [D:/Vivado Projects/Lab3/arbiter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'arbiter' (1#1) [D:/Vivado Projects/Lab3/arbiter.vhd:20]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'D:/Vivado Projects/Lab3/Lab3.runs/synth_1/.Xil/Vivado-9828-DESKTOP-89ULBBA/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'mydcm1' of component 'clk_wiz_0' [D:/Vivado Projects/Lab3/testbench.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/Vivado Projects/Lab3/Lab3.runs/synth_1/.Xil/Vivado-9828-DESKTOP-89ULBBA/realtime/clk_wiz_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'rsrc' declared at 'D:/Vivado Projects/Lab3/rsrc.vhd:11' bound to instance 'rsrc0' of component 'rsrc' [D:/Vivado Projects/Lab3/testbench.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'rsrc' [D:/Vivado Projects/Lab3/rsrc.vhd:23]
+INFO: [Synth 8-3491] module 'pc' declared at 'D:/Vivado Projects/Lab3/pc.vhd:11' bound to instance 'rsrcpc' of component 'pc' [D:/Vivado Projects/Lab3/rsrc.vhd:208]
+INFO: [Synth 8-638] synthesizing module 'pc' [D:/Vivado Projects/Lab3/pc.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'pc' (2#1) [D:/Vivado Projects/Lab3/pc.vhd:20]
+INFO: [Synth 8-3491] module 'a' declared at 'D:/Vivado Projects/Lab3/a.vhd:10' bound to instance 'rsrcareg' of component 'a' [D:/Vivado Projects/Lab3/rsrc.vhd:216]
+INFO: [Synth 8-638] synthesizing module 'a' [D:/Vivado Projects/Lab3/a.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'a' (3#1) [D:/Vivado Projects/Lab3/a.vhd:17]
+INFO: [Synth 8-3491] module 'c' declared at 'D:/Vivado Projects/Lab3/c.vhd:10' bound to instance 'rsrccreg' of component 'c' [D:/Vivado Projects/Lab3/rsrc.vhd:222]
+INFO: [Synth 8-638] synthesizing module 'c' [D:/Vivado Projects/Lab3/c.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'c' (4#1) [D:/Vivado Projects/Lab3/c.vhd:18]
+INFO: [Synth 8-3491] module 'alu' declared at 'D:/Vivado Projects/Lab3/alu.vhd:12' bound to instance 'rsrcalu' of component 'alu' [D:/Vivado Projects/Lab3/rsrc.vhd:229]
+INFO: [Synth 8-638] synthesizing module 'alu' [D:/Vivado Projects/Lab3/alu.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'alu' (5#1) [D:/Vivado Projects/Lab3/alu.vhd:31]
+INFO: [Synth 8-3491] module 'shiftcounter' declared at 'D:/Vivado Projects/Lab3/shiftcounter.vhd:11' bound to instance 'rsrcshiftcounter' of component 'shiftcounter' [D:/Vivado Projects/Lab3/rsrc.vhd:247]
+INFO: [Synth 8-638] synthesizing module 'shiftcounter' [D:/Vivado Projects/Lab3/shiftcounter.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'shiftcounter' (6#1) [D:/Vivado Projects/Lab3/shiftcounter.vhd:17]
+INFO: [Synth 8-3491] module 'regfile' declared at 'D:/Vivado Projects/Lab3/regfile.vhd:10' bound to instance 'rsrcregfile' of component 'regfile' [D:/Vivado Projects/Lab3/rsrc.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'regfile' [D:/Vivado Projects/Lab3/regfile.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'regfile' (7#1) [D:/Vivado Projects/Lab3/regfile.vhd:24]
+INFO: [Synth 8-3491] module 'ma' declared at 'D:/Vivado Projects/Lab3/ma.vhd:10' bound to instance 'rsrcmareg' of component 'ma' [D:/Vivado Projects/Lab3/rsrc.vhd:265]
+INFO: [Synth 8-638] synthesizing module 'ma' [D:/Vivado Projects/Lab3/ma.vhd:18]
+INFO: [Synth 8-256] done synthesizing module 'ma' (8#1) [D:/Vivado Projects/Lab3/ma.vhd:18]
+INFO: [Synth 8-3491] module 'md' declared at 'D:/Vivado Projects/Lab3/md.vhd:10' bound to instance 'rsrcmdreg' of component 'md' [D:/Vivado Projects/Lab3/rsrc.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'md' [D:/Vivado Projects/Lab3/md.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'md' (9#1) [D:/Vivado Projects/Lab3/md.vhd:21]
+INFO: [Synth 8-3491] module 'ir' declared at 'D:/Vivado Projects/Lab3/ir.vhd:10' bound to instance 'rsrcirreg' of component 'ir' [D:/Vivado Projects/Lab3/rsrc.vhd:282]
+INFO: [Synth 8-638] synthesizing module 'ir' [D:/Vivado Projects/Lab3/ir.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ir' (10#1) [D:/Vivado Projects/Lab3/ir.vhd:20]
+INFO: [Synth 8-3491] module 'conbit' declared at 'D:/Vivado Projects/Lab3/conbit.vhd:10' bound to instance 'rsrcconbit' of component 'conbit' [D:/Vivado Projects/Lab3/rsrc.vhd:291]
+INFO: [Synth 8-638] synthesizing module 'conbit' [D:/Vivado Projects/Lab3/conbit.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'conbit' (11#1) [D:/Vivado Projects/Lab3/conbit.vhd:16]
+INFO: [Synth 8-3491] module 'control' declared at 'D:/Vivado Projects/Lab3/control.vhd:11' bound to instance 'rsrccontrol' of component 'control' [D:/Vivado Projects/Lab3/rsrc.vhd:296]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/Vivado Projects/Lab3/control.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'control' (12#1) [D:/Vivado Projects/Lab3/control.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'rsrc' (13#1) [D:/Vivado Projects/Lab3/rsrc.vhd:23]
+INFO: [Synth 8-3491] module 'eprom' declared at 'D:/Vivado Projects/Lab3/eprom.vhd:10' bound to instance 'erpom1' of component 'eprom' [D:/Vivado Projects/Lab3/testbench.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'eprom' [D:/Vivado Projects/Lab3/eprom.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'eprom' (14#1) [D:/Vivado Projects/Lab3/eprom.vhd:17]
+INFO: [Synth 8-3491] module 'sram' declared at 'D:/Vivado Projects/Lab3/sram.vhd:11' bound to instance 'sram1' of component 'sram' [D:/Vivado Projects/Lab3/testbench.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'sram' [D:/Vivado Projects/Lab3/sram.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sram' (15#1) [D:/Vivado Projects/Lab3/sram.vhd:20]
+INFO: [Synth 8-3491] module 'vga' declared at 'D:/Vivado Projects/Lab3/vga.vhd:6' bound to instance 'vga1' of component 'vga' [D:/Vivado Projects/Lab3/testbench.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'vga' [D:/Vivado Projects/Lab3/vga.vhd:20]
+INFO: [Synth 8-3491] module 'blk_mem_gen_0' declared at 'D:/Vivado Projects/Lab3/Lab3.runs/synth_1/.Xil/Vivado-9828-DESKTOP-89ULBBA/realtime/blk_mem_gen_0_stub.vhdl:5' bound to instance 'myrom' of component 'blk_mem_gen_0' [D:/Vivado Projects/Lab3/vga.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [D:/Vivado Projects/Lab3/Lab3.runs/synth_1/.Xil/Vivado-9828-DESKTOP-89ULBBA/realtime/blk_mem_gen_0_stub.vhdl:19]
+INFO: [Synth 8-256] done synthesizing module 'vga' (16#1) [D:/Vivado Projects/Lab3/vga.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'testbench' (17#1) [D:/Vivado Projects/Lab3/testbench.vhd:24]
 WARNING: [Synth 8-3331] design conbit has unconnected port ir[31]
 WARNING: [Synth 8-3331] design conbit has unconnected port ir[30]
 WARNING: [Synth 8-3331] design conbit has unconnected port ir[29]
@@ -174,7 +174,7 @@ WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[6]
 WARNING: [Synth 8-3331] design shiftcounter has unconnected port ir[5]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 446.180 ; gain = 157.320
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 447.457 ; gain = 158.484
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -187,55 +187,55 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 446.180 ; gain = 157.320
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 447.457 ; gain = 158.484
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 446.180 ; gain = 157.320
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 447.457 ; gain = 158.484
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mydcm1'
-Finished Parsing XDC File [c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mydcm1'
-Parsing XDC File [c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'vga1/myrom'
-Finished Parsing XDC File [c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'vga1/myrom'
-Parsing XDC File [C:/fall_2018_cse_361s/Lab3/testbench.xdc]
-WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [C:/fall_2018_cse_361s/Lab3/testbench.xdc:1]
-Finished Parsing XDC File [C:/fall_2018_cse_361s/Lab3/testbench.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/fall_2018_cse_361s/Lab3/testbench.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/testbench_propImpl.xdc].
+Parsing XDC File [d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mydcm1'
+Finished Parsing XDC File [d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'mydcm1'
+Parsing XDC File [d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'vga1/myrom'
+Finished Parsing XDC File [d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'vga1/myrom'
+Parsing XDC File [D:/Vivado Projects/Lab3/testbench.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/Vivado Projects/Lab3/testbench.xdc:1]
+Finished Parsing XDC File [D:/Vivado Projects/Lab3/testbench.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Vivado Projects/Lab3/testbench.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/testbench_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/testbench_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 804.516 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 806.129 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 804.516 ; gain = 515.656
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 806.129 ; gain = 517.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 804.516 ; gain = 515.656
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 806.129 ; gain = 517.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 5).
 Applied set_property DONT_TOUCH = true for mydcm1. (constraint file  auto generated constraint, line ).
 Applied set_property DONT_TOUCH = true for vga1/myrom. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 804.516 ; gain = 515.656
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 806.129 ; gain = 517.156
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'arbiter'
 INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "nxt_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/fall_2018_cse_361s/Lab3/alu.vhd:44]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Vivado Projects/Lab3/alu.vhd:44]
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'control'
 INFO: [Synth 8-5546] ROM "request" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "gra" won't be mapped to RAM because it is too sparse
@@ -277,7 +277,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 804.516 ; gain = 515.656
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 806.129 ; gain = 517.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -436,7 +436,7 @@ WARNING: [Synth 8-3332] Sequential element (rsrc0/rsrcmareg/address_int_reg[1]) 
 WARNING: [Synth 8-3332] Sequential element (rsrc0/rsrcmareg/address_int_reg[0]) is unused and will be removed from module testbench.
 WARNING: [Synth 8-3332] Sequential element (vga1/r_reg[0]) is unused and will be removed from module testbench.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 804.516 ; gain = 515.656
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:23 . Memory (MB): peak = 806.129 ; gain = 517.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -467,13 +467,13 @@ INFO: [Synth 8-5578] Moved timing constraint from pin 'mydcm1/clk_out2' to pin '
 WARNING: [Synth 8-565] redefining clock 'clk'
 INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 804.516 ; gain = 515.656
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:32 . Memory (MB): peak = 806.129 ; gain = 517.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 891.117 ; gain = 602.258
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 889.844 ; gain = 600.871
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -499,7 +499,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 897.418 ; gain = 608.559
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:38 . Memory (MB): peak = 896.723 ; gain = 607.750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -523,7 +523,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 897.418 ; gain = 608.559
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 896.723 ; gain = 607.750
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -536,7 +536,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 897.418 ; gain = 608.559
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 896.723 ; gain = 607.750
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -548,25 +548,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 897.418 ; gain = 608.559
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 896.723 ; gain = 607.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 897.418 ; gain = 608.559
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 896.723 ; gain = 607.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 897.418 ; gain = 608.559
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 896.723 ; gain = 607.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 897.418 ; gain = 608.559
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 896.723 ; gain = 607.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -622,11 +622,11 @@ Report Instance Areas:
 |14    |  vga1          |vga     |    92|
 +------+----------------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 897.418 ; gain = 608.559
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 896.723 ; gain = 607.750
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 897.418 ; gain = 250.223
-Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 897.418 ; gain = 608.559
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:31 . Memory (MB): peak = 896.723 ; gain = 249.078
+Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 896.723 ; gain = 607.750
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 455 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -640,9 +640,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 99 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:55 . Memory (MB): peak = 897.418 ; gain = 620.035
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:43 . Memory (MB): peak = 896.723 ; gain = 619.223
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/fall_2018_cse_361s/Lab3/Lab3.runs/synth_1/testbench.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'D:/Vivado Projects/Lab3/Lab3.runs/synth_1/testbench.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file testbench_utilization_synth.rpt -pb testbench_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.125 . Memory (MB): peak = 897.418 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sun Oct 21 16:41:39 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 896.723 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 22 10:49:09 2018...

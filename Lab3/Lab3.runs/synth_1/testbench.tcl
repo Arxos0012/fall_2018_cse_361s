@@ -17,47 +17,45 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/fall_2018_cse_361s/Lab3/Lab3.cache/wt [current_project]
-set_property parent.project_path C:/fall_2018_cse_361s/Lab3/Lab3.xpr [current_project]
+set_property webtalk.parent_dir {D:/Vivado Projects/Lab3/Lab3.cache/wt} [current_project]
+set_property parent.project_path {D:/Vivado Projects/Lab3/Lab3.xpr} [current_project]
 set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo c:/fall_2018_cse_361s/Lab3/Lab3.cache/ip [current_project]
+set_property ip_output_repo {d:/Vivado Projects/Lab3/Lab3.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_vhdl -library xil_defaultlib {
-  C:/fall_2018_cse_361s/Lab3/a.vhd
-  C:/fall_2018_cse_361s/Lab3/alu.vhd
-  C:/fall_2018_cse_361s/Lab3/arbiter.vhd
-  C:/fall_2018_cse_361s/Lab3/c.vhd
-  C:/fall_2018_cse_361s/Lab3/conbit.vhd
-  C:/fall_2018_cse_361s/Lab3/control.vhd
-  C:/fall_2018_cse_361s/Lab3/eprom.vhd
-  C:/fall_2018_cse_361s/Lab3/ir.vhd
-  C:/fall_2018_cse_361s/Lab3/ma.vhd
-  C:/fall_2018_cse_361s/Lab3/md.vhd
-  C:/fall_2018_cse_361s/Lab3/pc.vhd
-  C:/fall_2018_cse_361s/Lab3/regfile.vhd
-  C:/fall_2018_cse_361s/Lab3/rsrc.vhd
-  C:/fall_2018_cse_361s/Lab3/shiftcounter.vhd
-  C:/fall_2018_cse_361s/Lab3/sram.vhd
-  C:/fall_2018_cse_361s/Lab3/vga.vhd
-  C:/fall_2018_cse_361s/Lab3/testbench.vhd
+  {D:/Vivado Projects/Lab3/a.vhd}
+  {D:/Vivado Projects/Lab3/alu.vhd}
+  {D:/Vivado Projects/Lab3/arbiter.vhd}
+  {D:/Vivado Projects/Lab3/c.vhd}
+  {D:/Vivado Projects/Lab3/conbit.vhd}
+  {D:/Vivado Projects/Lab3/control.vhd}
+  {D:/Vivado Projects/Lab3/eprom.vhd}
+  {D:/Vivado Projects/Lab3/ir.vhd}
+  {D:/Vivado Projects/Lab3/ma.vhd}
+  {D:/Vivado Projects/Lab3/md.vhd}
+  {D:/Vivado Projects/Lab3/pc.vhd}
+  {D:/Vivado Projects/Lab3/regfile.vhd}
+  {D:/Vivado Projects/Lab3/rsrc.vhd}
+  {D:/Vivado Projects/Lab3/shiftcounter.vhd}
+  {D:/Vivado Projects/Lab3/sram.vhd}
+  {D:/Vivado Projects/Lab3/vga.vhd}
+  {D:/Vivado Projects/Lab3/testbench.vhd}
 }
-read_ip -quiet c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet {{D:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci}}
+set_property used_in_implementation false [get_files -all {{d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc}}]
+set_property used_in_implementation false [get_files -all {{d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc}}]
 
-read_ip -quiet c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
-set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc]
+read_ip -quiet {{D:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci}}
+set_property used_in_implementation false [get_files -all {{d:/Vivado Projects/Lab3/Lab3.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_ooc.xdc}}]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -67,8 +65,8 @@ set_property used_in_implementation false [get_files -all c:/fall_2018_cse_361s/
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/fall_2018_cse_361s/Lab3/testbench.xdc
-set_property used_in_implementation false [get_files C:/fall_2018_cse_361s/Lab3/testbench.xdc]
+read_xdc {{D:/Vivado Projects/Lab3/testbench.xdc}}
+set_property used_in_implementation false [get_files {{D:/Vivado Projects/Lab3/testbench.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 0
 close [open __synthesis_is_running__ w]
