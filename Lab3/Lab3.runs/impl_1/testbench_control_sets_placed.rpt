@@ -1,0 +1,115 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sun Oct 21 16:44:11 2018
+| Host         : DESKTOP-28DBK6Q running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file testbench_control_sets_placed.rpt
+| Design       : testbench
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    49 |
+| Unused register locations in slices containing registers |    28 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|     14 |            1 |
+|    16+ |           47 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              52 |           11 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              40 |           10 |
+| Yes          | No                    | No                     |            2428 |          520 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              84 |           17 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+------------------------------------+-----------------------------+------------------+----------------+
+|      Clock Signal     |            Enable Signal           |       Set/Reset Signal      | Slice Load Count | Bel Load Count |
++-----------------------+------------------------------------+-----------------------------+------------------+----------------+
+|  mydcm1/inst/clk_out2 |                                    | vga1/ltOp                   |                1 |              2 |
+|  mydcm1/inst/clk_out1 |                                    |                             |                5 |             14 |
+|  mydcm1/inst/clk_out2 |                                    | vga1/r[3]_i_1_n_0           |                5 |             18 |
+|  mydcm1/inst/clk_out2 |                                    | vga1/eqOp                   |                4 |             20 |
+|  mydcm1/inst/clk_out2 | vga1/eqOp                          | vga1/v                      |                3 |             20 |
+|  mydcm1/inst/clk_out2 |                                    |                             |                6 |             38 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrccontrol/E[0]             |                             |               11 |             60 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg31_reg[31]_0[0] |                             |               24 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/E[0]               | rsrc0/rsrcpc/pc[31]_i_1_n_0 |               14 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/a_reg[0][0]        |                             |               18 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/mdo_reg[31][0]     |                             |               20 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg25_reg[31][0]   |                             |               16 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg12_reg[31][0]   |                             |                9 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg26_reg[31][0]   |                             |               13 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg11_reg[31][0]   |                             |                9 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg27_reg[31][0]   |                             |               13 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg24_reg[31][0]   |                             |               12 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg28_reg[31][0]   |                             |               16 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg29_reg[31][0]   |                             |               16 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg2_reg[31][0]    |                             |                6 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg23_reg[31][0]   |                             |               20 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg16_reg[31][0]   |                             |               11 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg13_reg[31][0]   |                             |               10 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg17_reg[31][0]   |                             |               15 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg14_reg[31][0]   |                             |               10 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg15_reg[31][0]   |                             |               13 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg18_reg[31][0]   |                             |                9 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg19_reg[31][0]   |                             |               13 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg1_reg[31][0]    |                             |                7 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg0_reg[31][0]    |                             |                9 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg10_reg[31][0]   |                             |                6 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg20_reg[31][0]   |                             |               15 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg21_reg[31][0]   |                             |               14 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg22_reg[31][0]   |                             |               16 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg30_reg[31][0]   |                             |               18 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrccontrol/c_reg[31][0]     |                             |               27 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrccontrol/mdi_reg[0][0]    |                             |               13 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrccontrol/ir_reg[0][0]     |                             |               13 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg6_reg[31][0]    |                             |               14 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg5_reg[31][0]    |                             |                8 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg4_reg[31][0]    |                             |               11 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg8_reg[31][0]    |                             |               19 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg9_reg[31][0]    |                             |               18 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg7_reg[31][0]    |                             |               20 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcirreg/reg3_reg[31][0]    |                             |                8 |             64 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcmareg/mdi_reg[31]_0      |                             |               32 |            256 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcmareg/mdi_reg[31]_2      |                             |               32 |            256 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcmareg/mdi_reg[31]        |                             |               32 |            256 |
+|  mydcm1/inst/clk_out1 | rsrc0/rsrcmareg/mdi_reg[31]_1      |                             |               32 |            256 |
++-----------------------+------------------------------------+-----------------------------+------------------+----------------+
+
+

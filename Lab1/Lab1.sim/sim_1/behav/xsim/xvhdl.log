@@ -1,4 +1,4 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/Hw2.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/Lab1.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0_sim_netlist.vhdl" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity \blk_mem_gen_0_blk_mem_gen_mux__parameterized0\
 INFO: [VRFC 10-307] analyzing entity blk_mem_gen_0_blk_mem_gen_prim_wrapper
 INFO: [VRFC 10-307] analyzing entity \blk_mem_gen_0_blk_mem_gen_prim_wrapper__parameterized0\
@@ -261,40 +261,40 @@ INFO: [VRFC 10-307] analyzing entity blk_mem_gen_0_blk_mem_gen_top
 INFO: [VRFC 10-307] analyzing entity blk_mem_gen_0_blk_mem_gen_v8_4_1_synth
 INFO: [VRFC 10-307] analyzing entity blk_mem_gen_0_blk_mem_gen_v8_4_1
 INFO: [VRFC 10-307] analyzing entity blk_mem_gen_0
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/Hw2.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/Lab1.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity clk_wiz_0_clk_wiz_0_clk_wiz
 INFO: [VRFC 10-307] analyzing entity clk_wiz_0
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/a.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/a.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity a
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/alu.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity alu
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/c.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/c.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity c
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/conbit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/conbit.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity conbit
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/control.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity control
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/controlstore.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/controlstore.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity controlstore
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/eprom.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/eprom.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity eprom
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/ir.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/ir.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity ir
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/ma.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/ma.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity ma
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/md.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/md.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity md
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/pc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/pc.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity pc
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/regfile.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/regfile.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity regfile
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/rsrc.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/rsrc.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity rsrc
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/shiftcounter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/shiftcounter.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity shiftcounter
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/sram.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/sram.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity sram
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/vga.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/vga.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity vga
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/Vivado Projects/Hw2/testbench.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/fall_2018_cse_361s/Lab1/testbench.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity testbench
