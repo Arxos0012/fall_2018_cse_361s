@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1540223298">
-  <File Type="BITSTR-BMM" Name="testbench_bd.bmm"/>
   <File Type="ROUTE-PWR" Name="testbench_power_routed.rpt"/>
   <File Type="PA-TCL" Name="testbench.tcl"/>
-  <File Type="OPT-DCP" Name="testbench_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="testbench_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="testbench_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="testbench_reports.tcl"/>
+  <File Type="OPT-DCP" Name="testbench_opt.dcp"/>
   <File Type="OPT-DRC" Name="testbench_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="testbench.hwdef"/>
   <File Type="PWROPT-DCP" Name="testbench_pwropt.dcp"/>
@@ -25,21 +25,21 @@
   <File Type="ROUTE-BLACKBOX-DCP" Name="testbench_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="testbench_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="testbench_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="testbench.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="testbench_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="testbench.mmi"/>
+  <File Type="BITSTR-LTX" Name="testbench.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="testbench_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="testbench.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="testbench_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="testbench.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="testbench_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="testbench.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="testbench_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="testbench_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="testbench_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="testbench_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="testbench_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="testbench_timing_summary_routed.rpx"/>
-  <File Type="RDI-RDI" Name="testbench.vdi"/>
   <File Type="ROUTE-CLK" Name="testbench_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="testbench.vdi"/>
   <File Type="ROUTE-BUS-SKEW" Name="testbench_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="testbench_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="testbench_bus_skew_routed.rpx"/>

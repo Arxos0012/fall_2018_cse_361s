@@ -28,16 +28,14 @@ ARCHITECTURE structure OF testbench IS
          clk_out2 : OUT STD_LOGIC;
          clk_in1  : IN  STD_LOGIC);
    END COMPONENT;
-   
+
    COMPONENT arbiter
    PORT (clk         : IN    STD_LOGIC ;
          request0    : IN    STD_LOGIC ;
          request1    : IN    STD_LOGIC ;
-         request2    : IN    STD_LOGIC ;
          reset_l     : IN    STD_LOGIC ;
          grant0      : OUT   STD_LOGIC ;
-         grant1      : OUT   STD_LOGIC ;
-         grant2      : OUT   STD_LOGIC) ;
+         grant1      : OUT   STD_LOGIC) ;
    END COMPONENT ;
 
    COMPONENT rsrc
@@ -101,10 +99,8 @@ ARCHITECTURE structure OF testbench IS
 
    SIGNAL request0     :  STD_LOGIC;
    SIGNAL request1     :  STD_LOGIC;
-   SIGNAL request2     :  STD_LOGIC;
    SIGNAL grant0       :  STD_LOGIC;
    SIGNAL grant1       :  STD_LOGIC;
-   SIGNAL grant2       :  STD_LOGIC;
 
 BEGIN
 
@@ -112,11 +108,9 @@ BEGIN
    PORT MAP(clk         => src_clk,
             request0    => request0,
             request1    => request1,
-            request2    => request2,
             reset_l     => reset_l,
             grant0      => grant0,
-            grant1      => grant1,
-            grant2      => grant2);
+            grant1      => grant1);
             
    mydcm1:clk_wiz_0
    PORT MAP(clk_out1 => src_clk ,
@@ -153,17 +147,6 @@ BEGIN
             write     => write,
             request   => request1,
             grant     => grant1,
-            done      => done);
-            
-   rsrc2:rsrc      
-   PORT MAP(clk       => src_clk,
-            reset_l   => reset_l_sync,
-            d         => d,
-            address   => address,
-            read      => read,
-            write     => write,
-            request   => request2,
-            grant     => grant2,
             done      => done);
 
 ------------------------------------------------------------------------
